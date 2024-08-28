@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_20eb1778562c1125867ee1e99a7d315f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_20eb1778562c1125867ee1e99a7d315f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_20eb1778562c1125867ee1e99a7d315f = L.map(
+                "map_20eb1778562c1125867ee1e99a7d315f",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2008af0259cd278a9bb2edf8a99ff406 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_20eb1778562c1125867ee1e99a7d315f);
+        
+    
+            var marker_e058874eb4cc0bc8af408711de2630af = L.marker(
+                [40.816615, -73.889883],
+                {}
+            ).addTo(map_20eb1778562c1125867ee1e99a7d315f);
+        
+    
+            var icon_de812a6409e7d5769751f4f2ecb5551c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e058874eb4cc0bc8af408711de2630af.setIcon(icon_de812a6409e7d5769751f4f2ecb5551c);
+        
+    
+        var popup_35adb1eb7adf7cd64a1bb35851998a2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dffa30fed54d576b8c33fc04d4746fd1 = $(`<div id="html_dffa30fed54d576b8c33fc04d4746fd1" style="width: 100.0%; height: 100.0%;">Living Room<br>800 Barretto Street; Bronx, NY 10474</div>`)[0];
+                popup_35adb1eb7adf7cd64a1bb35851998a2e.setContent(html_dffa30fed54d576b8c33fc04d4746fd1);
+            
+        
+
+        marker_e058874eb4cc0bc8af408711de2630af.bindPopup(popup_35adb1eb7adf7cd64a1bb35851998a2e)
+        ;
+
+        
+    
+    
+            var marker_dc23d9c4a24ac75c26d270c3e8f00b68 = L.marker(
+                [40.745377, -73.981306],
+                {}
+            ).addTo(map_20eb1778562c1125867ee1e99a7d315f);
+        
+    
+            var icon_981389970fd57af25f32029de5a0d64f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc23d9c4a24ac75c26d270c3e8f00b68.setIcon(icon_981389970fd57af25f32029de5a0d64f);
+        
+    
+        var popup_67904c85cc1d347c722cce44eda405df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_459a794a351de5eae22cc7d2d8e4d317 = $(`<div id="html_459a794a351de5eae22cc7d2d8e4d317" style="width: 100.0%; height: 100.0%;">Main chance<br>120 E. 32nd Street; New York, NY 10016</div>`)[0];
+                popup_67904c85cc1d347c722cce44eda405df.setContent(html_459a794a351de5eae22cc7d2d8e4d317);
+            
+        
+
+        marker_dc23d9c4a24ac75c26d270c3e8f00b68.bindPopup(popup_67904c85cc1d347c722cce44eda405df)
+        ;
+
+        
+    
+    
+            var marker_dd768481472c276dc75e2d4ee0dbb084 = L.marker(
+                [40.749139, -73.994016],
+                {}
+            ).addTo(map_20eb1778562c1125867ee1e99a7d315f);
+        
+    
+            var icon_5e1fe6627314d1755c24baa52d0cae8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd768481472c276dc75e2d4ee0dbb084.setIcon(icon_5e1fe6627314d1755c24baa52d0cae8a);
+        
+    
+        var popup_a22ad60525c39f1e13b101c300fa5d63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26ed48cc3824ba4fe26daed9254a6362 = $(`<div id="html_26ed48cc3824ba4fe26daed9254a6362" style="width: 100.0%; height: 100.0%;">Olivieri<br>257 West 30th Street; New York, NY 10001</div>`)[0];
+                popup_a22ad60525c39f1e13b101c300fa5d63.setContent(html_26ed48cc3824ba4fe26daed9254a6362);
+            
+        
+
+        marker_dd768481472c276dc75e2d4ee0dbb084.bindPopup(popup_a22ad60525c39f1e13b101c300fa5d63)
+        ;
+
+        
+    
+    
+            var marker_4346dc7a8b6111a932b131e6f0d72e9f = L.marker(
+                [40.645821, -74.077908],
+                {}
+            ).addTo(map_20eb1778562c1125867ee1e99a7d315f);
+        
+    
+            var icon_6691184c2a010b8c42f4166d5437adc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4346dc7a8b6111a932b131e6f0d72e9f.setIcon(icon_6691184c2a010b8c42f4166d5437adc5);
+        
+    
+        var popup_9fb92b9f2f2b3eda0babffedf2ae0ee2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_829c17f0d5faa09b7c478c54aabc4a95 = $(`<div id="html_829c17f0d5faa09b7c478c54aabc4a95" style="width: 100.0%; height: 100.0%;">Project Hospitality<br>150 Richmond Terrace; Staten Island, NY 10301</div>`)[0];
+                popup_9fb92b9f2f2b3eda0babffedf2ae0ee2.setContent(html_829c17f0d5faa09b7c478c54aabc4a95);
+            
+        
+
+        marker_4346dc7a8b6111a932b131e6f0d72e9f.bindPopup(popup_9fb92b9f2f2b3eda0babffedf2ae0ee2)
+        ;
+
+        
+    
+    
+            var marker_8326b2d2ea37e2d28a33d02f75289565 = L.marker(
+                [40.676015, -73.905105],
+                {}
+            ).addTo(map_20eb1778562c1125867ee1e99a7d315f);
+        
+    
+            var icon_3a44af44c72ca092954d3b288ab991f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8326b2d2ea37e2d28a33d02f75289565.setIcon(icon_3a44af44c72ca092954d3b288ab991f1);
+        
+    
+        var popup_09935e2bbce9b164360a5f1c915d9519 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e4b00782fd0b52a457758c1bba4a41e = $(`<div id="html_3e4b00782fd0b52a457758c1bba4a41e" style="width: 100.0%; height: 100.0%;">The Gathering Place<br>2402 Atlantic Ave; Brooklyn, NY 11233</div>`)[0];
+                popup_09935e2bbce9b164360a5f1c915d9519.setContent(html_3e4b00782fd0b52a457758c1bba4a41e);
+            
+        
+
+        marker_8326b2d2ea37e2d28a33d02f75289565.bindPopup(popup_09935e2bbce9b164360a5f1c915d9519)
+        ;
+
+        
+    
+    
+            var marker_3cb6407f6173e07f432da9c21aa6394b = L.marker(
+                [40.689535, -73.843952],
+                {}
+            ).addTo(map_20eb1778562c1125867ee1e99a7d315f);
+        
+    
+            var icon_aa57ea8bde3078ecbf96ceb46ccec1d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3cb6407f6173e07f432da9c21aa6394b.setIcon(icon_aa57ea8bde3078ecbf96ceb46ccec1d2);
+        
+    
+        var popup_d54c484f7982ceef1a7539cd8620629e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9d60bd1676a13a4bd883bb07a5bea52 = $(`<div id="html_d9d60bd1676a13a4bd883bb07a5bea52" style="width: 100.0%; height: 100.0%;">Breaking Ground<br>100-32 Atlantic Avenue, Jamaica, NY 11416</div>`)[0];
+                popup_d54c484f7982ceef1a7539cd8620629e.setContent(html_d9d60bd1676a13a4bd883bb07a5bea52);
+            
+        
+
+        marker_3cb6407f6173e07f432da9c21aa6394b.bindPopup(popup_d54c484f7982ceef1a7539cd8620629e)
+        ;
+
+        
+    
+    
+            var marker_18e6b469f484600b33ff901575dcde0b = L.marker(
+                [40.737652, -73.997557],
+                {}
+            ).addTo(map_20eb1778562c1125867ee1e99a7d315f);
+        
+    
+            var icon_f4d855f0966db3fdb553a5637af31e6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_18e6b469f484600b33ff901575dcde0b.setIcon(icon_f4d855f0966db3fdb553a5637af31e6a);
+        
+    
+        var popup_1310e685d35c33d3dae75ef522267d26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a6f4f394902d0fe8592f75466fe8cdf = $(`<div id="html_5a6f4f394902d0fe8592f75466fe8cdf" style="width: 100.0%; height: 100.0%;">Paul Place DIC<br>114 West 14th Street, NY 10012</div>`)[0];
+                popup_1310e685d35c33d3dae75ef522267d26.setContent(html_5a6f4f394902d0fe8592f75466fe8cdf);
+            
+        
+
+        marker_18e6b469f484600b33ff901575dcde0b.bindPopup(popup_1310e685d35c33d3dae75ef522267d26)
+        ;
+
+        
+    
+    
+            var marker_9f1386f6fb6f96ad206942dc736591a0 = L.marker(
+                [40.703136, -73.79752],
+                {}
+            ).addTo(map_20eb1778562c1125867ee1e99a7d315f);
+        
+    
+            var icon_e8e6209ec5375ed834680b2f56da6c5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9f1386f6fb6f96ad206942dc736591a0.setIcon(icon_e8e6209ec5375ed834680b2f56da6c5d);
+        
+    
+        var popup_60c43debbc563ca1156dd2b354e01c7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d4ee76a9de7ec3c2f3a9aa1aa88b8da = $(`<div id="html_7d4ee76a9de7ec3c2f3a9aa1aa88b8da" style="width: 100.0%; height: 100.0%;">Union Hall Drop-in Center<br>92-32 Union Hall Street, Jamaica, NY 11433</div>`)[0];
+                popup_60c43debbc563ca1156dd2b354e01c7f.setContent(html_7d4ee76a9de7ec3c2f3a9aa1aa88b8da);
+            
+        
+
+        marker_9f1386f6fb6f96ad206942dc736591a0.bindPopup(popup_60c43debbc563ca1156dd2b354e01c7f)
+        ;
+
+        
+    
+</script>
+</html>

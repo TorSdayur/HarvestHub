@@ -1,0 +1,44 @@
+/* Author: Leye Adesina */
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+    transition: transfrom 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translate(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.times {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #777;
+    font-size: 1.0em;
+}
+.contact_info h6 {
+    margin: 0;
+    font-weight: normal;
+    word-wrap: break-word;
+}
+
+
+
+
+
+

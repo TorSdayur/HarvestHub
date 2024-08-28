@@ -1,0 +1,8 @@
+/* Author: Tor Sdayur */
+
+.cards-container {
+    margin-top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center
+}

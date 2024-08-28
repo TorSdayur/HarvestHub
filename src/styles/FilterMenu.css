@@ -1,0 +1,28 @@
+/* Author: Leye Adesina */
+
+.filter-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: brown;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+.filter-menu button, .filter-menu div {
+    background-color: orange;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.filter-menu button:hover, .filter-menu div:hover {
+    background-color: yellow;
+    color: brown;
+  }

@@ -1,0 +1,5 @@
+.cards-content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center
+}

@@ -1,0 +1,32 @@
+/*
+Author: Nathan Vazquez
+CTP Hackathon 2024 
+Team: DTNL - Driven To Navigate Life
+Project: Harvest Hub
+*/
+
+.leaflet-container{
+    height:65vh;
+    width:80vw;
+  }
+  
+.cluster-icon{
+  height:3rem;
+  width:3rem;
+  border-radius:50%;
+  background-color:blue;
+  transform: translate(-25%,-25%);
+  display:flex;
+  align-items: center;
+  font-weight:900;
+  font-size:1.5rem;
+}
+  
+.map{
+  display:flex;
+  align-items: center;
+  margin:auto;
+  border-color:white;
+  position: relative;
+  z-index: 1;
+}

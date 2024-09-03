@@ -1,8 +1,10 @@
 #dist-field {
-    background-color: orange;
+    background-color: #994900;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
+    outline:none;
+    width: 200px;
 }

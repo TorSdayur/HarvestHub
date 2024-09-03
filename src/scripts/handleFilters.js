@@ -7,7 +7,7 @@ export function onClickDropdownHandler(filters, selectedFilter, setFilters)
     let filter = selectedFilter.value;
     let bgColor = selectedFilter.style.backgroundColor;
     // changes ui color
-    selectedFilter.style.backgroundColor = (bgColor === "" ? "blue" : "");
+    selectedFilter.style.backgroundColor = (bgColor === "" ? "#c45400" : "");
     //updates items (filters)
     const updatedFilters = filters.includes(filter) 
         ? filters.filter(i => i !== filter)

@@ -74,7 +74,7 @@ export function AboutUs(){
             </div>
             <div className="tor-card">
                 <h2 className="h2"> Tor Sdayur</h2>
-                <img src="https://ca.slack-edge.com/T079D4UFV2L-U07BD32CHA4-3feabf8fec9b-48" />
+                <img src="tor-headshot.jpg" />
                 <h3>Contribution:</h3>
                 <div className="contribution">
                 <p className="p">

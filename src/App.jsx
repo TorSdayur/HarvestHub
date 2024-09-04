@@ -27,10 +27,6 @@ function App() {
   return (
     <>
       <div>
-        <header>
-          <div className="logo"></div>
-          <div className="mission-statement"></div>
-        </header>
         <Container foodTable={foodTable}/>
       </div>
     </>

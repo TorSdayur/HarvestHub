@@ -1,0 +1,68 @@
+/* Author: Tor Sdayur */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #994900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+img {
+    height: 70px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+
+
+  .drpdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  button.nav{
+    border:none;
+    border-radius:5px;
+    padding:15px 30px;
+    font-size:18px;
+    cursor:pointer;
+    background-color: #f9f7e9;
+    color: #3f170e;
+  }
+  
+  button.nav:hover{
+    background-color:#ddd;
+  }
+  
+  .dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:#f9f7e9;
+    border-radius:5px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  
+  .drpdown:hover .dropdown-options {
+    display: block;
+  }
+  
+  .dropdown-options .link {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    padding:20px 40px;
+  }
+  
+  .dropdown-options .link:hover {
+    color: #0a0a23;
+    background-color: #ddd;
+    border-radius:5px;
+  }

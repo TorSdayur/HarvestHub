@@ -2,60 +2,13 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  margin-top: 70px;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1022%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(242%2c 227%2c 214%2c 1)'%3e%3c/rect%3e%3ccircle r='180' cx='24.72' cy='60.34' stroke='%23994900' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='180' cx='745.73' cy='709.41' stroke='%23994900' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='190.19' cx='1301.52' cy='579.73' stroke='%23994900' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='266.62' cx='1005.62' cy='142' stroke='%23994900' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='116.87' cx='1734.18' cy='772.16' stroke='%23994900' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='229.235' cx='1259.85' cy='429.6' stroke='%23994900' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='237.905' cx='1767.26' cy='495.88' stroke='%23994900' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='325.015' cx='1038.07' cy='491.92' stroke='%23994900' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='354.335' cx='42.47' cy='1052.9' stroke='%23994900' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='125.365' cx='759.27' cy='932.78' stroke='%23994900' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1022'%3e%3crect width='1920' height='1080' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

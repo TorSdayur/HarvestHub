@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 import FilterMenu from "./FilterMenu"
 import Map from "./Map"
 import CardsContent from "./CardsContent";
+import Header from "./Header";
 
 import { getFoodServices } from '../scripts/getFoodServices'
 import { onClickDropdownHandler, distSubmitHandler } from "../scripts/handleFilters";
 import { getLocation } from "../scripts/getLocation";
 
 import '../styles/Container.css'
+import '../styles/ContentContainer.css'
 
 //contains major web content
 export default function Container({foodTable})
@@ -44,13 +46,14 @@ export default function Container({foodTable})
 
     return (
         <div className="container">
-            <FilterMenu 
-                onClickBoroughs={onClickBoroughs}
-                onClickAvailabilities={onClickAvailabilities}
-                onKeyDownDist={onKeyDownDist}
-            />
+            <Header/>
             <div className="content-container">
                 <Map location={location}/>
+                <FilterMenu 
+                    onClickBoroughs={onClickBoroughs}
+                    onClickAvailabilities={onClickAvailabilities}
+                    onKeyDownDist={onKeyDownDist}
+                />
                 <CardsContent
                     foodServices={foodServices}
                     boroughs={boroughs}

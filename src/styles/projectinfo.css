@@ -1,0 +1,50 @@
+.proj-info>*{
+    color: black;
+}
+
+.section{
+    margin:1% 5% 0 5%;
+    background-color:#F9F7E9 ;
+    border-radius: 10px;
+    padding:5px 3px 0 3px;
+}
+
+.section>p{
+    text-align: left;
+    color:#3F170E;
+}
+
+h4{
+    color:#3F170E;
+    text-align: left;
+}
+
+span{
+    margin:3px;
+    font-weight:bold;
+}
+
+div.skills {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+div.skills > p {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.skills > ul > li {
+    list-style-type: none;
+}
+
+div.skills > ul {
+    padding: 0;
+}
+
+div.skills > h3 {
+    margin: 0 auto;
+}

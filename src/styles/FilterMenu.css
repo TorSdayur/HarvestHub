@@ -1,28 +1,39 @@
 /* Author: Leye Adesina */
 
 .filter-menu {
+    margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    flex-flow: row wrap;
     align-items: center;
-    background-color: brown;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    justify-content: center;
+    background-color: #994900;
+    max-width: 700px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 10;
+    border-radius: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 .filter-menu button, .filter-menu div {
-    background-color: orange;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: #994900;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 .filter-menu button:hover, .filter-menu div:hover {
-    background-color: yellow;
+    background-color: orange;
     color: brown;
   }
+
+@media only screen and (max-width: 615px)
+{
+    .filter-menu {
+        flex-flow: column wrap;
+        
+    }
+    #dist-field {
+        width: 100px;
+    }
+}

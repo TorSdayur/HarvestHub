@@ -1,7 +1,7 @@
 /* Author: Leye Adesina */
 
 .card {
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -12,7 +12,7 @@
 }
 .card:hover {
     transform: translate(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px rgba(209, 114, 0, 1);
 }
 .card h2 {
     font-size: 1.5em;

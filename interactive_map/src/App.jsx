@@ -7,30 +7,21 @@ Project: Harvest Hub
 
 // Importing necessary libraries
 import { useEffect, useState } from 'react'
-
-import { Icon, divIcon, markerClusterGroup, point } from 'leaflet';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
-import MarkerClusterGroup from 'react-leaflet-cluster';
-
-import supabase from '../utils/supabase'
-
 import 'leaflet/dist/leaflet.css';
-import "../styles/Map.css"
+import './index.css'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { Icon, divIcon, markerClusterGroup, point } from 'leaflet';
+import MarkerClusterGroup from 'react-leaflet-cluster';
+import { createClient } from '@supabase/supabase-js'
 
-// Author: Tor Sdayur
-// recenters map once user location from browser is fetched
-const RecenterAutomatically = ({lat,lng}) => {
-  const map = useMap();
-    useEffect(() => {
-      if (lat !== undefined && lng !== undefined) {
-        map.setView([lat, lng], 13);
-      }
-    }, [lat, lng]);
-    return null;
-  }
 
-export default function Map({location}) {
-  const [currLoc, setCurrLoc] = useState({});
+function App() {
+  // Create a single supabase client for interacting with your database
+  const supabase = createClient(
+    // Supabase credentials
+    "https://gadbhrsupsghumaigngg.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdhZGJocnN1cHNnaHVtYWlnbmdnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQyODIzNjEsImV4cCI6MjAzOTg1ODM2MX0.6jMNgFs_BV-dddLV3ifi5EburlqoA4SpT84ITfwkmMQ"
+  )
 
   // create icon for all Dental resources
   const dentalIcon = new Icon({
@@ -62,7 +53,6 @@ export default function Map({location}) {
     iconSize: [38, 38]
   })
 
-  /*
   // Define states for all dental sites
   const [dentalSites, setDentalSites] = useState([]);
   // create array for dental marker objects
@@ -92,7 +82,6 @@ export default function Map({location}) {
       }
     })
   }
-  */
 
   // Define states for all food sites
   const [foodSites, setFoodSites] = useState([]);
@@ -197,25 +186,26 @@ export default function Map({location}) {
 
 
   useEffect(() => {
-    //getDentalSites();
+    getDentalSites();
     getFoodSites();
     getShelters();
     getSexHealthClinics()
     getCunyFoodSites()
   }, []);
 
-  useEffect(() => {
-    setCurrLoc(location)
-  }, [location]);
 
   return (
     <>
-      {/*addAllDentalMarkers()*/}
+      {addAllDentalMarkers()}
       {addAllFoodSiteMarkers()}
       {addAllShelterMarkers()}
       {addAllSexHelthClinicsMarkers()}
       {addAllCunyFoodSiteMarkers()}
-
+      {/* <ul>
+          {dentalSites.map((dentalSite) => (
+            <li key={dentalSite.School}>{dentalSite.School}</li>
+          ))}
+        </ul> */}
       <div className="map">
         <MapContainer center={[40.768538, -73.964741]} zoom={13}>
           <TileLayer
@@ -226,17 +216,8 @@ export default function Map({location}) {
           <MarkerClusterGroup
             chunkedLoading
           >
-            {/*dentalMarkers.map((marker,index) => (
-              <Marker key={index} position={marker.geocode} icon={dentalIcon}>
-                <Popup>
-                  <p>{marker.popUp}</p>
-                  <p>{marker.contact}</p>
-                </Popup>
-              </Marker>
-            ))*/}
-
-            {foodSiteMarkers.map((marker,index) => (
-              <Marker key={index} position={marker.geocode} icon={foodSiteIcon}>
+            {dentalMarkers.map(marker => (
+              <Marker position={marker.geocode} icon={dentalIcon}>
                 <Popup>
                   <p>{marker.popUp}</p>
                   <p>{marker.contact}</p>
@@ -244,15 +225,24 @@ export default function Map({location}) {
               </Marker>
             ))}
 
-            {shelterMarkers.map((marker,index) => (
-              <Marker key={index} position={marker.geocode} icon={shelterMarkerIcon}>
+            {foodSiteMarkers.map(marker => (
+              <Marker position={marker.geocode} icon={foodSiteIcon}>
+                <Popup>
+                  <p>{marker.popUp}</p>
+                  <p>{marker.contact}</p>
+                </Popup>
+              </Marker>
+            ))}
+
+            {shelterMarkers.map(marker => (
+              <Marker position={marker.geocode} icon={shelterMarkerIcon}>
                 <Popup><p>{marker.popUp}</p>
                 </Popup>
               </Marker>
             ))}
 
-            {cunyFoodSiteMarkers.map((marker,index) => (
-              <Marker key={index} position={marker.geocode} icon={cunyFoodMarkerIcon}>
+            {cunyFoodSiteMarkers.map(marker => (
+              <Marker position={marker.geocode} icon={cunyFoodMarkerIcon}>
                 <Popup>
                   <p>{marker.popUp}</p>
                   <p>{marker.contact}</p>
@@ -260,21 +250,19 @@ export default function Map({location}) {
               </Marker>
             ))}
 
-            {sexHealthClinicMarkers.map((marker,index) => (
-              <Marker key={index} position={marker.geocode} icon={sexHealthClinicMarkerIcon}>
+            {sexHealthClinicMarkers.map(marker => (
+              <Marker position={marker.geocode} icon={sexHealthClinicMarkerIcon}>
                 <Popup><p>{marker.popUp}</p>
                 </Popup>
               </Marker>
             ))}
-            
+
           </MarkerClusterGroup>
-          <RecenterAutomatically
-            lat={currLoc.latitude}
-            lng={currLoc.longitude}
-          />
         </MapContainer>
       </div>
     </>
   )
 
 }
+
+export default App

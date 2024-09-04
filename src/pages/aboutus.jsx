@@ -78,7 +78,7 @@ export function AboutUs(){
                 <h3>Contribution:</h3>
                 <div className="contribution">
                 <p className="p">
-                    I worked as a front-end developer, and developed the site more broadly. 
+                    I worked as a front-end developer, and developed the site more broadly. I was also responsible for much of the styling. 
                     I integrated our food resources as filterable, and highly navigable 
                     tiles. Though I have used React before, I was by no means comfortable with 
                     it. I learnt a ton about working on this project! Most importantly, I 

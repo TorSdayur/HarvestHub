@@ -26,3 +26,14 @@
     background-color: orange;
     color: brown;
   }
+
+@media only screen and (max-width: 615px)
+{
+    .filter-menu {
+        flex-flow: column wrap;
+        
+    }
+    #dist-field {
+        width: 100px;
+    }
+}

@@ -15,7 +15,7 @@ export default function Header()
 
 function PageMenu () {
     return (
-        <div className="dropdown">
+        <div className="drpdown">
             <button className="nav">Navigate</button>
             <div className="dropdown-options">
                 <Link className="link" to="/useharvesthub">Use Harvest Hub</Link>

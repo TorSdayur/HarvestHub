@@ -24,3 +24,27 @@ span{
     font-weight:bold;
 }
 
+div.skills {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+div.skills > p {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.skills > ul > li {
+    list-style-type: none;
+}
+
+div.skills > ul {
+    padding: 0;
+}
+
+div.skills > h3 {
+    margin: 0 auto;
+}

@@ -125,11 +125,11 @@ export function ProjectInfo() {
                     <span>React-leaflet</span>
                     <span>Streamlit</span>
                 </p>
-            </div>
-            <ul>
+                <ul>
                 <li><a href="https://devpost.com/software/703541?ref_content=user-portfolio&ref_feature=in_progress">Project Submission</a></li>
                 <li><a href="https://github.com/NathanRVazquez/harvesthub">Project Repo</a></li>
-            </ul>
+                </ul>
+            </div>
             </div>
         </>
     )

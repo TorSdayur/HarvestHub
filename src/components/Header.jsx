@@ -1,13 +1,13 @@
 /* Author: Nathan Vazquez */
 import { Link } from "react-router-dom";
 
-import '../styles/Header.css'
+=import '../styles/Header.css'
 
 export default function Header()
 {
     return (
         <header>
-            <img src="src/assets/logo.png"/>
+            <img id="site-logo" src="logo.svg"/>
             <PageMenu />
         </header>
     );

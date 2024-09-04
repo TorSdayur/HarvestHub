@@ -7,7 +7,7 @@ export default function Header()
 {
     return (
         <header>
-            <img src="src/assets/logo.svg"/>
+            <img src="src/assets/logo.png"/>
             <PageMenu />
         </header>
     );

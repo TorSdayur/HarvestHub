@@ -4,6 +4,7 @@ import '../styles/Card.css'
 
 export default function Card({title, phone, address, days, hours}) {
     let processed_days = getProcessedDays(days);
+    console.log(days)
     return (
         <div
             className="card"
@@ -24,11 +25,18 @@ export default function Card({title, phone, address, days, hours}) {
 function getProcessedDays(u_days)
 {
     let a = '';
-    let days = ['Mon','Tue','Wed', 'Thur', 'Fri', 'Sat', 'Sun'];
-    for (const index in u_days)
+    let days = {
+        m: 'Mon',
+        tu: 'Tue',
+        w: 'Wed',
+        th: 'Thur',
+        f: 'Fri',
+        sa: 'Sat',
+        su: 'Sun'
+    };
+    for (const day of u_days)
     {
-        if (u_days[index] != '')
-        a += days[index] + ", ";
+        a += days[day] + ", ";
     }
     return a.substring(0, a.length - 2);
 }
